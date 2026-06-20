@@ -1,0 +1,50 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Superpower
+providerId: superpower-health
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Health
+- Longevity
+- Consumer Health
+- Rate Limiting
+- Quotas
+- Throttling
+description: >-
+  Superpower does not publish a public or partner developer API, so there are
+  no documented API rate limits, quotas, or throttling policies to reconcile.
+  Member-facing constraints are product limits rather than API limits: the base
+  membership includes one comprehensive blood draw per year, and any inbound
+  wearable data sync is governed by the upstream provider (Superpower is
+  reported to use the third-party Vital aggregator) and that provider's own
+  limits, not a Superpower-published API contract.
+notes: >-
+  Not reconciled. If Superpower ever exposes a developer API, populate per-key
+  request and quota limits and response codes here from its documentation.
+sources:
+- https://superpower.com/
+- https://superpower.com/faqs
+responseCodes: {}
+limits:
+- name: Annual Blood Draw
+  scope: membership
+  metric: tests
+  limit: 1 per membership year
+  notes: Product limit on the base membership, not an API rate limit.
+- name: Public API Rate Limits
+  scope: account
+  metric: requests
+  limit: not applicable
+  notes: No public API is documented, so no API rate limits exist to reconcile.
+policies:
+- name: No Public API
+  description: >-
+    No developer API, authentication scheme, or quota policy is published.
+    Wearable ingestion limits, where applicable, are governed by upstream
+    aggregator (Vital) limits, not by Superpower.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

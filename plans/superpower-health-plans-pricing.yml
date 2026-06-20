@@ -1,0 +1,99 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Superpower
+providerId: superpower-health
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Health
+- Longevity
+- Lab Testing
+- Biomarkers
+- Preventive Health
+- Consumer Health
+- Plans
+description: >-
+  Superpower sells a consumer membership, not API access. The base membership
+  is an annual subscription that includes one comprehensive blood draw across
+  100+ biomarkers, health scores, biological age, AI chat, action plans, and a
+  care team. Public reporting places the base membership at $199/year (reduced
+  from an earlier $499/year), with a higher $399/year price for members in NY
+  and NJ; the membership is HSA/FSA eligible. Additional tests (environmental
+  toxins, heavy metals, continuous glucose monitoring, cancer screening,
+  microbiome) are sold as separate add-ons. There is no developer/API pricing
+  because no public API is offered.
+notes: >-
+  Pricing is not reconciled. Figures are drawn from third-party coverage and
+  the Superpower marketing site as of June 2026 and have changed over time
+  ($499 to $199); regional pricing (NY/NJ at $399) and add-on prices vary.
+  Verify current membership pricing on the Superpower checkout/welcome pages
+  before relying on these values. No API or usage-based plan exists to model.
+sources:
+- https://superpower.com/
+- https://superpower.com/faqs
+- https://superpower.com/welcome
+- https://superpower.com/baseline-membership
+plans:
+- id: superpower-membership
+  name: Membership
+  type: subscription
+  description: >-
+    Annual consumer membership including one comprehensive blood draw across
+    100+ biomarkers, 17 health scores, biological age, AI chat, personalized
+    action plans, and access to a care team. HSA/FSA eligible.
+  entries:
+  - label: Base Membership
+    name: membership_base
+    type: flat
+    metric: subscription
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: $199 per year (reduced from $499)
+    userMultiplied: false
+  - label: Regional Membership (NY / NJ)
+    name: membership_ny_nj
+    type: flat
+    metric: subscription
+    limit: -1
+    timeFrame: year
+    geo: us-ny-nj
+    unit: 1
+    price: $399 per year
+    userMultiplied: false
+  elements:
+  - name: Comprehensive Blood Test (100+ biomarkers)
+  - name: Health Scores
+  - name: Biological Age
+  - name: AI Health Chat
+  - name: Personalized Action Plans
+  - name: Care Team Access
+- id: superpower-add-ons
+  name: Add-on Testing
+  type: usage
+  description: >-
+    Optional one-off diagnostic tests purchased in addition to the base
+    membership. Individual prices vary and are not reconciled here.
+  entries:
+  - label: Add-on Tests
+    name: add_on_tests
+    type: usage
+    metric: tests
+    limit: -1
+    timeFrame: usage
+    geo: global
+    unit: 1
+    price: varies by test (environmental toxins, heavy metals, CGM, cancer screening, microbiome)
+    userMultiplied: false
+  elements:
+  - name: Environmental Toxins
+  - name: Heavy Metals
+  - name: Continuous Glucose Monitoring
+  - name: Cancer Screening
+  - name: Microbiome Testing
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

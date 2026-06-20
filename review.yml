@@ -1,0 +1,68 @@
+aid: superpower-health
+name: Superpower
+review:
+  question: Does Superpower expose a documented public, partner, or developer API (including WebSocket/SSE streaming)?
+  answer: false
+  date: '2026-06-20'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was created. Superpower publishes no event, streaming,
+    SSE, or WebSocket surface. All functionality is delivered through the
+    consumer web and mobile apps with no documented real-time API.
+findings:
+  summary: |
+    Superpower (superpower.com) is a consumer preventive-health and longevity
+    membership. It offers an annual comprehensive blood draw across 100+
+    biomarkers, AI result interpretation, health scores, biological age,
+    personalized action plans, and a care team. As of the review date Superpower
+    does NOT publish any public, partner, or developer API. There is no developer
+    portal, no API reference, no documented authentication scheme, and no
+    REST/GraphQL/WebSocket/SSE endpoints for ordering tests, retrieving results,
+    or accessing AI features. Inbound wearable/health-app data (Oura, Whoop,
+    Apple Health) is reported to be ingested via the third-party Vital
+    aggregator, which means Superpower is a CONSUMER of an external API rather
+    than a PUBLISHER of its own. No endpoints were fabricated; the OpenAPI
+    document contains an empty paths object by design. A separate, unrelated
+    product at ai.superpower.social (a social-media comment-moderation tool) was
+    encountered during research and is NOT this provider.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API base URL or endpoints are documented for the Superpower health product.
+    - protocol: SSE
+      scheme: https
+      documented: false
+      note: No Server-Sent Events streaming surface is documented.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented.
+  endpointsConfirmedRest: []
+sources:
+  - url: https://superpower.com/
+    type: Website
+    note: Marketing/product site. Describes membership, biomarkers, AI chat, integrations; no API mentioned.
+  - url: https://superpower.com/faqs
+    type: Documentation
+    note: Membership FAQs. No public API, developer access, or partner API mentioned.
+  - url: https://superpower.com/welcome
+    type: Website
+    note: Membership/pricing context; no developer surface.
+  - url: https://longevity.technology/news/superpower-the-era-of-expensive-inaccessible-healthcare-is-over/
+    type: Article
+    note: Third-party coverage of the business and pricing shift ($499 to $199).
+  - url: https://www.productpep.com/blog/2025/10/27/what-is-superpowers-superpower
+    type: Article
+    note: Notes wearable integration uses third-party Vital aggregator (Superpower consumes Vital's API).
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No public API surface of any protocol exists. The catalog documents the
+    provider honestly: apis.yml lists consumer product capabilities as
+    sub-APIs (reconciled context = no public API), the OpenAPI document is
+    intentionally path-free, and plans/rate-limits/finops are marked
+    reconciled:false with notes explaining the absence of an API. No AsyncAPI
+    document was created because there is no streaming surface.

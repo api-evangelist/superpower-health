@@ -1,0 +1,21 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Superpower",
+    "version": "0.0",
+    "description": "Superpower (superpower.com) is a consumer preventive-health and longevity membership. As of the catalog date it publishes no public, partner, or developer API: there is no developer portal, API reference, authentication scheme, or set of endpoints. This collection is intentionally minimal and contains no callable API operations; it only links to the public marketing site. No endpoints have been fabricated."
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Superpower Website",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://superpower.com/"
+      },
+      "docs": "Public marketing and member site. Not a documented API endpoint; included only as a reference because Superpower does not publish a developer API."
+    }
+  ]
+}

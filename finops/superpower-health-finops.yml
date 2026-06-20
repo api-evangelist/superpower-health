@@ -1,0 +1,81 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Superpower
+providerId: superpower-health
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Health
+- Longevity
+- Consumer Health
+- FinOps
+- Cost Management
+- FOCUS
+description: >-
+  FinOps view of Superpower spend. Superpower is a consumer subscription, not a
+  metered API platform, so there is no usage-based API billing to manage. Cost
+  is a flat annual membership (publicly reported at $199/year base, $399/year in
+  NY/NJ, formerly $499/year), HSA/FSA eligible, plus optional one-off add-on
+  diagnostic tests. There are no per-token, per-request, or per-call meters
+  because no public API exists. This artifact is intentionally minimal and not
+  reconciled; it records subscription and add-on spend rather than API usage.
+notes: >-
+  Not reconciled. Membership pricing has changed over time and varies by
+  region; verify against the Superpower site. Update this artifact only if
+  Superpower introduces usage-based or API billing.
+sources:
+- https://superpower.com/
+- https://superpower.com/faqs
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Superpower
+serviceCategory: Healthcare
+billingModel:
+  pricingCategory: Subscription
+  billingFrequency: Annual
+  billingCurrency: USD
+  chargeCategories:
+  - Purchase
+focusColumns:
+  ServiceName: Superpower Membership
+  ServiceCategory: Healthcare
+  ProviderName: Superpower
+  PublisherName: Superpower
+  InvoiceIssuerName: Superpower
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+  PricingCategory: Subscription
+meters:
+- name: membership_subscription
+  description: Flat annual membership fee, charged per member per year.
+  unit: subscriptions
+  aggregation: sum
+  dimensions:
+  - member
+  - region
+- name: add_on_tests
+  description: One-off add-on diagnostic tests purchased outside the base membership.
+  unit: tests
+  aggregation: sum
+  dimensions:
+  - member
+  - test
+principles:
+- name: Visibility
+  description: Track membership renewals and add-on test purchases from Superpower receipts; there is no API usage export.
+- name: Allocation
+  description: Allocate membership and add-on costs to the individual member or household using the account.
+- name: Optimization
+  description: Use HSA/FSA eligibility; weigh add-on tests against base membership value; review regional pricing differences.
+- name: Accountability
+  description: Review annual renewal pricing changes ($499 to $199) and confirm current rate before each renewal.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
