@@ -124,3 +124,9 @@ common:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+
+common:
+  - type: DomainSecurity
+    url: security/superpower-health-domain-security.yml
+  - url: https://www.superpower.com/blog
+    type: Blog
