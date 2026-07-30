@@ -8,7 +8,19 @@ description: Superpower is a consumer preventive-health and longevity membership
   delivered through web and mobile apps. As of the catalog date Superpower does not
   publish a public or partner developer API; this catalog documents the product surface
   honestly rather than fabricating endpoints.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: paid
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Paid
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/superpower-health.png
 tags:
 - Health
 - Longevity
