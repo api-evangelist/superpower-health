@@ -1,0 +1,14 @@
+{
+  "provider": "superpower-health",
+  "sources": [
+    "superpower-health-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived superpower-health-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
