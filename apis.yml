@@ -45,7 +45,7 @@ apis:
   properties:
   - url: https://superpower.com/
     type: Documentation
-  - url: openapi/superpower-health-openapi.yml
+  - url: openapi/_original/superpower-health-openapi.yml
     type: OpenAPI
   description: Annual comprehensive blood testing across 100+ biomarkers in 21 categories
     (hormones, longevity, immune, inflammation, nutrients, toxins) collected via Quest
@@ -63,7 +63,7 @@ apis:
   properties:
   - url: https://superpower.com/
     type: Documentation
-  - url: openapi/superpower-health-openapi.yml
+  - url: openapi/_original/superpower-health-openapi.yml
     type: OpenAPI
   description: Result interpretation surfaced as 17 health scores plus a biological
     age calculation derived from measured biomarkers and computed ratios/indices.
@@ -80,7 +80,7 @@ apis:
   properties:
   - url: https://superpower.com/
     type: Documentation
-  - url: openapi/superpower-health-openapi.yml
+  - url: openapi/_original/superpower-health-openapi.yml
     type: OpenAPI
   description: SuperpowerAI chat assistant that lets members explore their lab data
     and protocols with clinical context. A consumer feature only; no public chat or
@@ -97,7 +97,7 @@ apis:
   properties:
   - url: https://superpower.com/
     type: Documentation
-  - url: openapi/superpower-health-openapi.yml
+  - url: openapi/_original/superpower-health-openapi.yml
     type: OpenAPI
   description: Personalized diet, lifestyle, and supplement action plans generated
     from a member's biomarkers and goals. In-app only; no documented public API for
@@ -114,7 +114,7 @@ apis:
   properties:
   - url: https://superpower.com/
     type: Documentation
-  - url: openapi/superpower-health-openapi.yml
+  - url: openapi/_original/superpower-health-openapi.yml
     type: OpenAPI
   description: Inbound sync of wearable and health-app data (Oura, Whoop, Apple Health)
     plus uploaded past lab results and medical records. Superpower is reported to use
