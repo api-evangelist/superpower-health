@@ -71,6 +71,10 @@ apis:
 - aid: superpower-health:superpower-health-ai-chat
   name: Superpower AI Health Chat
   tags:
+  - Artificial Intelligence
+  - Health Coach
+  - Chat
+  tags_raw:
   - AI
   - Health Coach
   - Chat
@@ -105,6 +109,10 @@ apis:
 - aid: superpower-health:superpower-health-wearable-sync
   name: Superpower Wearable & Records Sync
   tags:
+  - Wearables
+  - Integration
+  - Health Data
+  tags_raw:
   - Wearables
   - Integrations
   - Health Data
