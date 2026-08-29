@@ -8,6 +8,17 @@ description: Superpower is a consumer preventive-health and longevity membership
   delivered through web and mobile apps. As of the catalog date Superpower does not
   publish a public or partner developer API; this catalog documents the product surface
   honestly rather than fabricating endpoints.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: unknown
