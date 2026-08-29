@@ -1,5 +1,7 @@
 aid: superpower-health
 url: https://raw.githubusercontent.com/api-evangelist/superpower-health/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 name: Superpower
 kind: company
 description: Superpower is a consumer preventive-health and longevity membership that
