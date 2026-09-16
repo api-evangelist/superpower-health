@@ -4,12 +4,11 @@ x-api-posture: no-product-api
 x-api-posture-basis: observed
 name: Superpower
 kind: company
-description: Superpower is a consumer preventive-health and longevity membership that
-  provides an annual comprehensive blood draw across 100+ biomarkers, AI-driven result
-  interpretation, biological age scoring, personalized action plans, and a care team,
-  delivered through web and mobile apps. As of the catalog date Superpower does not
-  publish a public or partner developer API; this catalog documents the product surface
-  honestly rather than fabricating endpoints.
+description: Superpower is a consumer preventive-health and longevity membership that provides an annual
+  comprehensive blood draw across 100+ biomarkers, AI-driven result interpretation, biological age scoring,
+  personalized action plans, and a care team, delivered through web and mobile apps. As of the catalog
+  date Superpower does not publish a public or partner developer API; this catalog documents the product
+  surface honestly rather than fabricating endpoints.
 deliveryModel:
   model: unknown
   open_source: false
@@ -43,7 +42,7 @@ tags:
 - Consumer Health
 - No Public API
 created: '2026-06-20'
-modified: '2026-06-20'
+modified: '2026-09-16'
 specificationVersion: '0.23'
 apis:
 - aid: superpower-health:superpower-health-biomarker-testing
@@ -60,10 +59,10 @@ apis:
     type: Documentation
   - url: openapi/_original/superpower-health-openapi.yml
     type: OpenAPI
-  description: Annual comprehensive blood testing across 100+ biomarkers in 21 categories
-    (hormones, longevity, immune, inflammation, nutrients, toxins) collected via Quest
-    Diagnostics locations or at-home phlebotomy. This is a consumer product capability;
-    no public API is documented for ordering tests or retrieving results programmatically.
+  description: Annual comprehensive blood testing across 100+ biomarkers in 21 categories (hormones, longevity,
+    immune, inflammation, nutrients, toxins) collected via Quest Diagnostics locations or at-home phlebotomy.
+    This is a consumer product capability; no public API is documented for ordering tests or retrieving
+    results programmatically.
 - aid: superpower-health:superpower-health-results-scores
   name: Superpower Results & Health Scores
   tags:
@@ -78,9 +77,9 @@ apis:
     type: Documentation
   - url: openapi/_original/superpower-health-openapi.yml
     type: OpenAPI
-  description: Result interpretation surfaced as 17 health scores plus a biological
-    age calculation derived from measured biomarkers and computed ratios/indices.
-    Exposed only inside the member app; no documented public API.
+  description: Result interpretation surfaced as 17 health scores plus a biological age calculation derived
+    from measured biomarkers and computed ratios/indices. Exposed only inside the member app; no documented
+    public API.
 - aid: superpower-health:superpower-health-ai-chat
   name: Superpower AI Health Chat
   tags:
@@ -99,9 +98,8 @@ apis:
     type: Documentation
   - url: openapi/_original/superpower-health-openapi.yml
     type: OpenAPI
-  description: SuperpowerAI chat assistant that lets members explore their lab data
-    and protocols with clinical context. A consumer feature only; no public chat or
-    completion API is documented.
+  description: SuperpowerAI chat assistant that lets members explore their lab data and protocols with
+    clinical context. A consumer feature only; no public chat or completion API is documented.
 - aid: superpower-health:superpower-health-action-plans
   name: Superpower Action Plans
   tags:
@@ -116,9 +114,8 @@ apis:
     type: Documentation
   - url: openapi/_original/superpower-health-openapi.yml
     type: OpenAPI
-  description: Personalized diet, lifestyle, and supplement action plans generated
-    from a member's biomarkers and goals. In-app only; no documented public API for
-    retrieving or managing plans.
+  description: Personalized diet, lifestyle, and supplement action plans generated from a member's biomarkers
+    and goals. In-app only; no documented public API for retrieving or managing plans.
 - aid: superpower-health:superpower-health-wearable-sync
   name: Superpower Wearable & Records Sync
   tags:
@@ -137,29 +134,17 @@ apis:
     type: Documentation
   - url: openapi/_original/superpower-health-openapi.yml
     type: OpenAPI
-  description: Inbound sync of wearable and health-app data (Oura, Whoop, Apple Health)
-    plus uploaded past lab results and medical records. Superpower is reported to use
-    the third-party Vital aggregator to ingest this data; it is a consumer of Vital's
-    API and does not publish its own developer API for these integrations.
+  description: Inbound sync of wearable and health-app data (Oura, Whoop, Apple Health) plus uploaded
+    past lab results and medical records. Superpower is reported to use the third-party Vital aggregator
+    to ingest this data; it is a consumer of Vital's API and does not publish its own developer API for
+    these integrations.
 common:
-- type: LinkedIn
-  url: https://www.linkedin.com/company/superpower-health
 - type: Website
-  url: https://superpower.com/
-- type: Documentation
-  url: https://superpower.com/faqs
-- type: Plans
-  url: plans/superpower-health-plans-pricing.yml
-- type: RateLimits
-  url: rate-limits/superpower-health-rate-limits.yml
-- type: FinOps
-  url: finops/superpower-health-finops.yml
+  url: https://superpower.com
+- type: DomainSecurity
+  url: security/superpower-health-domain-security.yml
+- url: https://www.superpower.com/blog
+  type: Blog
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
-
-common:
-  - type: DomainSecurity
-    url: security/superpower-health-domain-security.yml
-  - url: https://www.superpower.com/blog
-    type: Blog
