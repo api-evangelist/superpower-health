@@ -103,6 +103,10 @@ apis:
 - aid: superpower-health:superpower-health-action-plans
   name: Superpower Action Plans
   tags:
+  - Protocol
+  - Personalization
+  - Recommendations
+  tags_raw:
   - Protocols
   - Personalization
   - Recommendations
