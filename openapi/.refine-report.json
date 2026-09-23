@@ -1,14 +1,17 @@
 {
   "provider": "superpower-health",
   "sources": [
-    "superpower-health-openapi.yml"
+    "_original/superpower-health-openapi.yml"
   ],
   "outputs": [],
-  "archived": [
-    "archived superpower-health-openapi.yml"
-  ],
+  "archived": [],
   "errors": [],
-  "warnings": [],
-  "notes": [],
+  "warnings": [
+    "produced no outputs (1 source(s) have no operations) \u2014 sources left in place rather than archived"
+  ],
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "superpower-health-openapi.yml: upgraded openapi 3.0.1 -> OpenAPI 3.2.0"
+  ],
   "skipped": []
 }
