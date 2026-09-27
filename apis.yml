@@ -53,7 +53,6 @@ apis:
   - Blood Work
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://superpower.com/
-  baseURL: https://superpower.com
   properties:
   - url: https://superpower.com/
     type: Documentation
@@ -71,7 +70,6 @@ apis:
   - Results
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://superpower.com/
-  baseURL: https://superpower.com
   properties:
   - url: https://superpower.com/
     type: Documentation
@@ -92,7 +90,6 @@ apis:
   - Chat
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://superpower.com/
-  baseURL: https://superpower.com
   properties:
   - url: https://superpower.com/
     type: Documentation
@@ -112,7 +109,6 @@ apis:
   - Recommendations
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://superpower.com/
-  baseURL: https://superpower.com
   properties:
   - url: https://superpower.com/
     type: Documentation
@@ -132,7 +128,6 @@ apis:
   - Health Data
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://superpower.com/
-  baseURL: https://superpower.com
   properties:
   - url: https://superpower.com/
     type: Documentation
