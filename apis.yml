@@ -138,6 +138,12 @@ apis:
     to ingest this data; it is a consumer of Vital's API and does not publish its own developer API for
     these integrations.
 common:
+- type: Plans
+  url: plans/superpower-health-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/superpower-health-rate-limits.yml
+- type: FinOps
+  url: finops/superpower-health-finops.yml
 - type: Website
   url: https://superpower.com
 - type: DomainSecurity
