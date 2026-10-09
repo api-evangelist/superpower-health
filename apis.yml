@@ -26,6 +26,9 @@ accessModel:
   trial: false
   try_now: false
   public: false
+  gated: private
+  gated_source:
+  - tag:No Public API
   label: Paid
   confidence: medium
   source:
@@ -40,12 +43,12 @@ tags:
 - Biomarkers
 - Preventive Health
 - Consumer Health
-- No Public API
 created: '2026-06-20'
 modified: '2026-09-16'
 specificationVersion: '0.23'
 apis:
 - aid: superpower-health:superpower-health-biomarker-testing
+  x-published: false
   name: Superpower Biomarker Testing
   tags:
   - Lab Testing
@@ -63,6 +66,7 @@ apis:
     This is a consumer product capability; no public API is documented for ordering tests or retrieving
     results programmatically.
 - aid: superpower-health:superpower-health-results-scores
+  x-published: false
   name: Superpower Results & Health Scores
   tags:
   - Health Scores
@@ -79,6 +83,7 @@ apis:
     from measured biomarkers and computed ratios/indices. Exposed only inside the member app; no documented
     public API.
 - aid: superpower-health:superpower-health-ai-chat
+  x-published: false
   name: Superpower AI Health Chat
   tags:
   - Artificial Intelligence
@@ -98,6 +103,7 @@ apis:
   description: SuperpowerAI chat assistant that lets members explore their lab data and protocols with
     clinical context. A consumer feature only; no public chat or completion API is documented.
 - aid: superpower-health:superpower-health-action-plans
+  x-published: false
   name: Superpower Action Plans
   tags:
   - Protocol
@@ -117,6 +123,7 @@ apis:
   description: Personalized diet, lifestyle, and supplement action plans generated from a member's biomarkers
     and goals. In-app only; no documented public API for retrieving or managing plans.
 - aid: superpower-health:superpower-health-wearable-sync
+  x-published: false
   name: Superpower Wearable & Records Sync
   tags:
   - Wearables
@@ -153,3 +160,5 @@ common:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+x-tags-removed:
+- No Public API
