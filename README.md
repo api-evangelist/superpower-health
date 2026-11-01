@@ -1,4 +1,4 @@
-# Superpower (superpower-health)
+# Superpower
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,135 +66,110 @@
 
 Superpower is a consumer preventive-health and longevity membership that provides an annual comprehensive blood draw across 100+ biomarkers, AI-driven result interpretation, biological age scoring, personalized action plans, and a care team, delivered through web and mobile apps. As of the catalog date Superpower does not publish a public or partner developer API; this catalog documents the product surface honestly rather than fabricating endpoints.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/superpower-health/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/superpower-health/refs/heads/main/apis.yml)
+**Areas:** Health · Longevity · Lab Testing · Biomarkers · Preventive Health · Consumer Health
 
-## Tags
+## Superpower on APIs.io
 
-- Health
-- Longevity
-- Lab Testing
-- Biomarkers
-- Preventive Health
-- Consumer Health
-- No Public API
+Everything profiled for Superpower is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/superpower-health/](https://apis.io/providers/superpower-health/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (5)
 
-- **Created:** 2026-06-20
-- **Modified:** 2026-06-20
+- [Superpower Biomarker Testing](https://apis.io/apis/superpower-health/superpower-health-biomarker-testing/) — Annual comprehensive blood testing across 100+ biomarkers in 21 categories (hormones, longevity, immune, inflammation, nutrients, toxins) collected via…
+- [Superpower Results & Health Scores](https://apis.io/apis/superpower-health/superpower-health-results-scores/) — Result interpretation surfaced as 17 health scores plus a biological age calculation derived from measured biomarkers and computed ratios/indices. Exposed…
+- [Superpower AI Health Chat](https://apis.io/apis/superpower-health/superpower-health-ai-chat/) — SuperpowerAI chat assistant that lets members explore their lab data and protocols with clinical context. A consumer feature only; no public chat or…
+- [Superpower Action Plans](https://apis.io/apis/superpower-health/superpower-health-action-plans/) — Personalized diet, lifestyle, and supplement action plans generated from a member's biomarkers and goals. In-app only; no documented public API for…
+- [Superpower Wearable & Records Sync](https://apis.io/apis/superpower-health/superpower-health-wearable-sync/) — Inbound sync of wearable and health-app data (Oura, Whoop, Apple Health) plus uploaded past lab results and medical records. Superpower is reported to use…
 
-## APIs
+### Published properties
 
-### Superpower Biomarker Testing
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Annual comprehensive blood testing across 100+ biomarkers in 21 categories (hormones, longevity, immune, inflammation, nutrients, toxins) collected via Quest Diagnostics locations or at-home phlebotomy. This is a consumer product capability; no public API is documented for ordering tests or retrieving results programmatically.
+#### Collections (1)
 
-- **Human URL:** [https://superpower.com/](https://superpower.com/)
-- **Base URL:** `https://superpower.com`
+Postman and Open Collection request collections.
 
-#### Tags
+- [Superpower](https://apis.io/collections/superpower-health/open-superpower-health/)
 
-- Lab Testing
-- Biomarkers
-- Blood Work
+#### Security (1)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://superpower.com/)
-- [OpenAPI](openapi/superpower-health-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/superpower-health.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/superpower-health.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Superpower Health Domain Security](https://apis.io/security/superpower-health/superpower-health-domain-security/)
 
-### Superpower Results & Health Scores
+#### Plans and pricing (1)
 
-Result interpretation surfaced as 17 health scores plus a biological age calculation derived from measured biomarkers and computed ratios/indices. Exposed only inside the member app; no documented public API.
+Published plans, tiers and prices.
 
-- **Human URL:** [https://superpower.com/](https://superpower.com/)
-- **Base URL:** `https://superpower.com`
+- [Superpower Health Plans Pricing](https://apis.io/plans/superpower-health/superpower-health-plans-pricing/)
 
-#### Tags
+#### Rate limits (1)
 
-- Health Scores
-- Biological Age
-- Results
+Published request limits.
 
-#### Properties
+- [Superpower Health Rate Limits](https://apis.io/rate-limits/superpower-health/superpower-health-rate-limits/)
 
-- [Documentation](https://superpower.com/)
-- [OpenAPI](openapi/superpower-health-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/superpower-health.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/superpower-health.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### FinOps (1)
 
-### Superpower AI Health Chat
+What the API costs to run, by operation.
 
-SuperpowerAI chat assistant that lets members explore their lab data and protocols with clinical context. A consumer feature only; no public chat or completion API is documented.
+- [Superpower Health Finops](https://apis.io/finops/superpower-health/superpower-health-finops/)
 
-- **Human URL:** [https://superpower.com/](https://superpower.com/)
-- **Base URL:** `https://superpower.com`
+## Where to find this API
 
-#### Tags
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- AI
-- Health Coach
-- Chat
+- [Website](https://superpower.com)
+- [Blog](https://www.superpower.com/blog)
 
-#### Properties
+## API Evangelist rating
 
-- [Documentation](https://superpower.com/)
-- [OpenAPI](openapi/superpower-health-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/superpower-health.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/superpower-health.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+**Kin Score 15.0** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-### Superpower Action Plans
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 25.1 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 5.3 |
 
-Personalized diet, lifestyle, and supplement action plans generated from a member's biomarkers and goals. In-app only; no documented public API for retrieving or managing plans.
+**Agent readiness 13.6** — agent-aware
 
-- **Human URL:** [https://superpower.com/](https://superpower.com/)
-- **Base URL:** `https://superpower.com`
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-#### Tags
+**Regulatory alignment 4.7** — Health
 
-- Protocols
-- Personalization
-- Recommendations
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/superpower-health/](https://apis.io/providers/superpower-health/).
 
-#### Properties
+## How this profile is made
 
-- [Documentation](https://superpower.com/)
-- [OpenAPI](openapi/superpower-health-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/superpower-health.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/superpower-health.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-### Superpower Wearable & Records Sync
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Superpower: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-Inbound sync of wearable and health-app data (Oura, Whoop, Apple Health) plus uploaded past lab results and medical records. Superpower is reported to use the third-party Vital aggregator to ingest this data; it is a consumer of Vital's API and does not publish its own developer API for these integrations.
+## Open an issue
 
-- **Human URL:** [https://superpower.com/](https://superpower.com/)
-- **Base URL:** `https://superpower.com`
-
-#### Tags
-
-- Wearables
-- Integrations
-- Health Data
-
-#### Properties
-
-- [Documentation](https://superpower.com/)
-- [OpenAPI](openapi/superpower-health-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/superpower-health.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/superpower-health.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/superpower-health)
-- [Website](https://superpower.com/)
-- [Documentation](https://superpower.com/faqs)
-- [Plans](plans/superpower-health-plans-pricing.yml)
-- [Rate Limits](rate-limits/superpower-health-rate-limits.yml)
-- [Fin Ops](finops/superpower-health-finops.yml)
-
-## Maintainers
-
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/superpower-health/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
